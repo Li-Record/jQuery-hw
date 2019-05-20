@@ -16,6 +16,7 @@ section {
 body {
     line-height: 1;
     font-size: 14px;
+    position: relative;
 }
 
 ol,
@@ -50,18 +51,32 @@ table {
     clear: both;
 }
 
+.goTop{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	opacity: 0.6;
+	transition: opacity 0.3s;
+}
+.goTop:hover{
+	opacity: 1;
+}
+
 .header {
     height: 418px;
     position: relative;
 }
+
 .swiper-container {
     width: 1001px;
     height: 418px;
 }
-.swiper-slide{
-	z-index: 0;
-	background: url(../img/background.png);
+
+.swiper-slide {
+    z-index: 0;
+    background: url(../img/background.png);
 }
+
 .menu {
     width: 100%;
     position: absolute;
@@ -151,7 +166,7 @@ table {
 .manu-item-link>li a {
     text-decoration: none;
     color: #00cc99;
-    padding: 0 10px 17px 10px;
+    padding: 0 10px 18px 10px;
     line-height: 36px;
 }
 
@@ -168,7 +183,8 @@ table {
     margin-top: 10px;
     border-radius: 5px;
 }
-.manu-item-link>li ul li{
+
+.manu-item-link>li ul li {
     background: #fff;
 }
 

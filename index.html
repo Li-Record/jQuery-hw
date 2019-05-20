@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <title>jQuery-hw</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- swiper -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+   	<!-- light box -->
+    <link href="css/lightbox.css" rel="stylesheet">
 </head>
 
 <body>
@@ -72,7 +75,10 @@
                 <li>
                     <a href="#">
                         <div class="intro-img">
-                            <img src="img/html5.png" alt="html5">
+                        	<a href="img/html5.png" data-lightbox="intro" data-title="html 5 基礎教學">
+                        		<img src="img/html5.png" alt="html5">
+                        	</a>
+                            
                         </div>
                         <h3>html 5 基礎教學</h3>
                         <p>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，了解正確的網站開發流程講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
@@ -81,7 +87,9 @@
                 <li>
                     <a href="#">
                         <div class="intro-img">
-                            <img src="img/rwd.png" alt="rwd">
+                            <a href="img/rwd.png" data-lightbox="intro" data-title="響應式網站設計">
+                        		<img src="img/rwd.png" alt="rwd">
+                        	</a>
                         </div>
                         <h3>響應式網站設計</h3>
                         <p>響 應 式 網 站 設 計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生了解行動版開發技巧。</p>
@@ -90,7 +98,9 @@
                 <li>
                     <a href="#">
                         <div class="intro-img">
-                            <img src="img/jq.png" alt="jq">
+                            <a href="img/jq.png" data-lightbox="intro" data-title="jQuery 實戰教學">
+                        		<img src="img/jq.png" alt="jq">
+                        	</a>
                         </div>
                         <h3>jQuery 實戰教學</h3>
                         <p>本課程有以下特色</p>
@@ -183,9 +193,13 @@
             </ul>
             <div class="clear"></div>
         </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    </div> 
+    <a class="goTop" href="#"><img src="img/arrow2.png" alt="arrow"></a>   
     <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- light box -->
+    <script src="js/lightbox-plus-jquery.js"></script>
     <script src="js/all.js"></script>
 </body>
 
